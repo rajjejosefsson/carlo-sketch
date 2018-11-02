@@ -1,0 +1,19 @@
+<html>
+<title>Carlo</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://rawgithub.com/soulwire/sketch.js/v1.0/js/sketch.min.js"></script>
+<script src="effects.js"></script>
+<script>
+  async function onload() {
+    initEffects();
+    const envData = await myEnvFunction(); // exposed from main.js by carlo
+    console.log(envData);
+  }
+</script>
+
+<body onload="onload()">
+  <div id="container">
+    <h1 class="title-name">Carlo <3 </h1>
+  </div>
+</body>
+</html>
